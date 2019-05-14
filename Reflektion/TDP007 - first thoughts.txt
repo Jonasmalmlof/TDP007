@@ -1,0 +1,86 @@
+
+>50 rader || >2000 tecken
+    
+Reflektioner kring hur det är att lära sig ett nytt språk (Ruby):
+    Hur har ni gått tillväga för att lära er Ruby?
+    Vilka fel och misstag har ni gjort under tiden?
+    Vad finns det för nya konstruktioner i Ruby som ni inte sett förut?
+    Vad finns det för konstruktioner som ni känner igen men som ser lite annorlunda ut?
+    Finns det något som ni irriterar er på eller tycker om i Ruby?
+    
+Reflektioner kring de olika tekniker som ni stöter på:
+    Hur användbart verkar detta vara?
+    Hur lätt/svårt är det att sätta sig in i?
+    Har ni hittat alternativa källor för att ta reda på nya saker?
+    
+Dokumentation av hur ni har tänkt när ni arbetat fram era lösningar:
+    Vad arbetade ni med (i grova drag) vid varje labbpass?
+    Hur har ni tolkat uppgiften?
+    Vad var svårt eller lätt med uppgiften?
+
+EXEMPELBLOG | KOPIERA INTE!
+2016-01-16   — Av Niklas Nson.
+
+Idag var den första gången som vi började koda i Ruby
+Vi tycker att Ruby är bekvämt och mycket av det man tycker
+är "logiskt" att det ska fungera fungerar. Syntaxen är lik
+Det är små ändringar
+men inget som är svårt att förstå. Tillexempel använder man "if" och "end"
+istället för måsvingar "{ }". Ruby har mycket stöd för Iteration av loopar,
+tillexempel har vi använt "inject" som manipulerar ett värde utanför loopen
+genom att interagera med elementen i en behållare.
+Något som sparar mycket kod är att man inte behöver skriva "return" för funktioner
+eftersom att alla funktioner returnerar det sista som står skrivet i funktionen.
+Allt i Ruby är objekt. Det gör att man kan "kedja" olika objekt med varrandra,
+vilket resulterar i att man kan skriva komplicerade uttryck på en rad, så kallad "one-liner".
+Detta är båda positivt och negativt. Det positiva är att man sparar kod och det ser snyggare
+och simplare ut. Det negativa är att andra programmerare kan ha svårt att förstå vad som händer
+på en one-liner. Därför kom vi fram till att one-liners ska användas varsamt och inte bli
+allt för komplicerade.
+Vi jobbade på effektivt och blev klara med alla uppgifter för seminariet idag.
+Testfall av koden har vi nosat lite på. Vi kommer få lära oss mer om enhetstester under
+föreläsningen idag.
+
+Under föreläsningen fick vi testa själva hur man enhetstestade. Mycket simpelt men tyvärr
+tråkigt. Vi behöver applicera enhetstester på koden vi skrivit, ett förslag är att skriva en
+ny fil med enhetstestarna för alla filer. Det kan vi göra genom att importera (require) alla
+uppgifts-filer till enhetstest-filen.
+Under föreläsningen fick vi också en djupare insikt på hur man använder sig av regex.
+
+Uppgift 6 
+Här skulle vi kunnat använda en attr_reader i stället för funktionen age. 
+och attr_writer i stället för vår age= funktion. 
+
+Uppgift 9 
+Oneliner är ju alltid kul  
+
+Uppgift 12
+False och nil är inte samma sak därför kör vi !
+
+
+
+
+
+2017-01-18: Utvecklarblogg.
+
+___ Reflektioner om Ruby som ett Språk:
+Som ett språk är Ruby mycket enklare att lära sig grunderna av än något som till exempel C++. Men för det är språket i sig inte simpelt. känslan är: “lätt att förstå, svårt att bemästra.”
+Nu i början är mycket av vårt lärande baserat på ‘trial & error’. 
+Syntaxen i språket påminner till viss del om Python som vi använde i TDP002 och TDP003, men att även variabler behandlas som objekt är en ny och fräsch sak. skapar enhetlighet. 
+Denna objekt-baserade uppbyggnad gör att man kan kedja olika uttryck till en lång, men kraftfull rad kod. kan dock bli svårt att förstå hur koden fungerar eller till och med vad den gör om man inte är försiktig. använd varsamt.
+
+___ Reflektioner kring olika Tekniker:
+Test::Unit kommentarer adderas här. enkelt? svårt att testa funktioner som inte returnerar något? 
+
+___ Dokumentation av våra lösningar:
+Uppgift 01: 
+    svårt att komma överens om vilken lösning som var bättre eller mer hur ordagrant vi skulle följa uppgiften.
+
+Uppgift 02: 
+    Skapar en range från 1 till variabeln n och stoppar in * mellan varje nummer. 
+
+Uppgift 03:
+    Skapar en variabel Current_Longest som sätts till första posten i arrayen, och går sedan igenom varje post i arrayen och kollar om den är längre än Current_Longest. är den det, uppdateras Current_Longest.
+    
+Uppgift 04:
+    ändrar uppgift3s IF-påstående till att komma från det block som 
